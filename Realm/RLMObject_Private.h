@@ -79,6 +79,7 @@ FOUNDATION_EXTERN uint64_t RLMObjectBaseGetCombineId(RLMObjectBase *);
 @interface RLMManagedPropertyAccessor : NSObject
 + (void)initializeObject:(void *)object parent:(RLMObjectBase *)parent property:(RLMProperty *)property;
 + (id)get:(void *)pointer;
++ (void)set:(void *)pointer value:(id)value;
 @end
 
 NS_ASSUME_NONNULL_END
